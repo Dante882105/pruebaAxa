@@ -1,0 +1,149 @@
+*{
+    font-family: arial;
+}
+.correct{
+    color: green;
+    font-weight:bold;
+    text-decoration-line: underline;
+}
+#formulario{
+    color: lightslategray;
+    font-size: 15px;
+    width: 80%;
+    height: 444px;
+    border: 2px solid;
+    box-shadow: 12px 5px lightgrey;
+    padding: 25px;
+    margin: auto 10%;
+}
+#formulario h1{
+    color: blue;
+    font-size: 25px;
+}
+.encabezado{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 50% 50%;
+    height: 170px;
+    margin-bottom: 25px;
+}
+.encabezado img{
+    width: 200px;
+    height: 160px;
+    grid-column-start: 2;
+}
+.parrafo1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin: 2% 5%;
+}
+.parrafo2{
+    text-align:justify;
+    font-size: 13px;
+    margin: -1% 5%;
+}
+form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 50px;
+}
+
+.type{
+    margin-left: 40%;
+}
+.number{
+    margin-right: 40%;
+}
+
+label{
+    font-size: 12px;
+    color: black;
+    font-weight: bolder;
+    margin-left: 2%;
+}
+input, select{
+    width: 90%;
+    margin: auto 3%;
+    background-color: lightgray;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: grey;
+}
+#boton{
+    width: 35%;
+    height: 35px;
+    border: none;
+    border-radius: 11px;
+    color: rgb(85, 97, 109);
+    background: linear-gradient(0deg, rgba(158,158,164,0.9640231092436975) 5%, rgba(199,63,222,1) 96%);
+    grid-column-start: 2;
+    margin-left: 22%;
+    margin-top: 10%;
+}
+
+@media (max-width: 480px) { 
+    #formulario{
+        color: lightslategray;
+        font-size: 15px;
+        width: 95%;
+        height: 570px;
+        border: 2px solid;
+        box-shadow: 12px 5px lightgray;
+        padding: 0;
+        margin: auto 2.5%;
+    }
+    #formulario h1{
+        color: blue;
+        text-align: center;
+        font-size: 18px;
+    }
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+        height: 302px;
+        margin: 15px auto;
+    }
+    .encabezado img{
+        width: 40%;
+        height: 40%;
+        margin-left: 30%;
+    }
+    .parrafo1{
+        margin: 2% 5%;
+    }
+    .parrafo2{
+        text-align:justify;
+        font-size: 13px;
+        margin: 5% 10%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    .type, .number{
+        margin: 0;
+    }
+    label{
+        font-size: 12px;
+        color: black;
+        font-weight: bolder;
+        margin-left: 2%;
+    }
+    input, select{
+        width: 90%;
+        margin: auto 3%;
+        background-color: lightgray;
+        border: none;
+        border-bottom: 2px solid gray;
+        color: grey;
+    }
+    #boton{
+        width: 50%;
+        height: 35px;
+        margin-left: 45%;
+        border: none;
+        border-radius: 11px;
+        color: rgb(85, 97, 109);
+        background: linear-gradient(0deg, rgba(158,158,164,0.9640231092436975) 5%, rgba(199,63,222,1) 96%);
+    }
+}
